@@ -1,6 +1,6 @@
 import { Document } from 'mongoose';
 
-export interface Cat extends Document {
+export interface Dog extends Document {
   readonly id: string;
   readonly name: string;
   readonly age: number;

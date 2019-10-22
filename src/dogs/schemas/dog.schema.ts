@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-export const CatSchema = new Schema(
+export const DogSchema = new Schema(
   {
     id: {
       type: String,

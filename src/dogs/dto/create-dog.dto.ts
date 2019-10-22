@@ -1,4 +1,4 @@
-export class CreateCatDto {
+export class CreateDogDto {
     readonly id: string;
     readonly name: string;
     readonly age: number;

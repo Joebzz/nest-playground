@@ -1,6 +1,7 @@
-import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+
 import { Cat } from './interfaces/cat.interface';
 import { CreateCatDto } from './dto/create-cat.dto';
 
@@ -15,5 +16,9 @@ export class CatsService {
 
   async findAll(): Promise<Cat[]> {
     return await this.catModel.find().exec();
+  }
+
+  async findOneById(id: string): Promise<Cat> {
+    return await this.catModel.findOne({id}).exec();
   }
 }
