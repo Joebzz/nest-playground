@@ -16,6 +16,7 @@ export class DogsController {
 
     @Get()
     async findAll(): Promise<Dog[]> {
+        console.log('Get All Dogs');
         return this.dogsService.findAll();
     }
 
