@@ -6,7 +6,7 @@ import { DogsModule } from './dogs/dogs.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/test'),
+    MongooseModule.forRoot('mongodb://mongodb:27017/test'),
     CatsModule,
     DogsModule
   ]
